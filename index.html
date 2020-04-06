@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Object practice</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address Book</title>
   </head>
-  
   <body>
     <div class="container">
-      <h1>Address Book</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <hr>
-          <h2>Add a Contact:</h2>
-          <form id="new-contact">
+      <h2>Wow!!! am Excited to share my adventorous escapades here </h2>
+      <form id="vacations">
+        <div id="visits">
+          <h3>here are the places i went</h3>
             <div class="form-group">
-              <label for="new-first-name">First Name</label>
-              <input type="text"  class="form-control" id="new-first-name">
+              <label for="country"> mmmm let me see the country i went to</label>
+              <input id="country" type="text">
             </div>
             <div class="form-group">
-              <label for="new-last-name">Last Name</label>
-              <input type="text"  class="form-control" id="new-last-name">
+              <label for="city">this is the city i am talking about</label>
+              <input id="city" type="text">
             </div>
             <div class="form-group">
-              <label for="new-phone-number">Phone Number</label>
-              <input type="text"  class="form-control" id="new-phone-number">
+              <label for="landMark">this is the things i want to talk about</label>
+              <input id="landMark" type="text">
             </div>
-            <button type="submit" class="btn-primary">Add</button>
-          </form>
-          <hr>
-          <h2>Contacts:</h2>
-          <ul id="contacts">
-          </ul>
+            <div class="form-group">
+              <label for="comments">Please share your experience</label>
+              <input id="comments" type="text">
+            </div>
         </div>
-        <div class="col-md-6">
-          <div id="show-contact">
-            <p>First Name: <span class="first-name"></span></p>
-            <p>Last Name: <span class="last-name"></span></p>
-            <p>Phone Number: <span class="phone-number"></span></p>
-            <div id="buttons">
-              <button type="click" class="btn-primary">let's see what happens on this on</button>
-            </div>
-          </div>
+        <div id=myButton>
+          <button type="submit" class="btn">Enter</button>
         </div>
-      </div>
+      </form> 
+        <div id="output">     
+        </div>
     </div>
   </body>
 </html>
