@@ -11,14 +11,11 @@ return this.visitNumber;
 }
 
 function Places(country, city, landMark, comments){
-this.country = country;
-this.city = city;
-this.landMark = landMark;
-this.comments = comments;
+this.country,
+this.city,
+this.landMark,
+this.comments
 }
-
-//newplaces(country)
-
 
 var visits = new Visits();
 
@@ -31,16 +28,15 @@ $(document).ready(function() {
      var city = $("#city").val();
      var landMark = $("#landMark").val();
      var comments = $("#comments").val();
+     $("#country").val("");
      $("#city").val("");
      $("#landMark").val("");
      $("#comments").val("");
-     //alert(country + city + landMark+ comments);
+     alert(country + city + landMark+ comments);
      //var myNewPlaces = places ;
      //var result = stateMent(courseType, highSchool, javaScript, engineeringDegree, interest, aptitude);
      var newPlaces = new Places(country, city, landMark, comments);
-     alert(newPlaces.country);
-     alert(newPlaces);
      visits.addVisits(newPlaces);
-     $("#output").text(visits.country);
+     $("#output").text(visits);
      });
  });
